@@ -1,7 +1,8 @@
 import string
 import socket
 
-def dnslookup(self, str):
+class DnsLookup(object):
+    def dnslookup(self, str):
         """ Perform DNS lookup on str.  If first character of digit is numeric,
             assume that str contains an IP address.  Otherwise, assume that str
             contains a hostname."""
